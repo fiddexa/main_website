@@ -1,1091 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>FIDDEXA | Connecting Businesses Worldwide</title>
-
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-<link rel="manifest" href="site.webmanifest">
-
-<meta name="theme-color" content="#06141a">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-
-    .about-button-wrap{
-
-display:flex;
-justify-content:center;
-
-margin:45px 0 60px;
-
-}
-
-.about-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-
-padding:22px 80px;
-
-font-size:28px;
-
-font-weight:700;
-
-font-family:'Cormorant Garamond',serif;
-
-letter-spacing:3px;
-
-color:#06141a;
-
-background:linear-gradient(
-180deg,
-#f0d17d,
-#d8b05d);
-
-border:none;
-
-border-radius:60px;
-
-cursor:pointer;
-
-box-shadow:
-
-0 8px 30px rgba(216,176,93,.45);
-
-transition:
-background .35s,
-color .35s,
-transform .35s,
-box-shadow .35s;
-
-}
-
-.about-btn:hover{
-
-transform:translateY(-3px);
-
-box-shadow:
-0 12px 35px rgba(216,176,93,.6);
-
-}
-/* =========================
-   MAIN NAVIGATION BUTTONS
-========================= */
-
-.main-buttons-wrap{
-
-    width:100%;
-
-    max-width:1100px;
-
-    margin:45px auto 25px;
-
-    padding:0 20px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:stretch;
-
-    gap:22px;
-
-}
-
-
-.main-btn{
-
-    flex:1;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    min-height:72px;
-
-    padding:18px 25px;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    font-family:
-    'Cormorant Garamond',
-    serif;
-
-    font-size:23px;
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
-    color:#06141a;
-
-    background:
-    linear-gradient(
-        180deg,
-        #f0d17d,
-        #d8b05d
-    );
-
-    border-radius:60px;
-
-    box-shadow:
-    0 8px 30px
-    rgba(216,176,93,.35);
-
-    transition:
-    transform .3s ease,
-    box-shadow .3s ease;
-
-}
-
-
-.main-btn:hover{
-
-    transform:
-    translateY(-3px);
-
-    box-shadow:
-    0 12px 35px
-    rgba(216,176,93,.55);
-
-}
-    
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-
-    padding-top:90px;
-
-    background:
-    linear-gradient(180deg,#06141a,#081d24,#06141a);
-
-    font-family:'Inter',sans-serif;
-
-    color:#f5f5f5;
-
-    overflow-x:hidden;
-
-}
-
-.container{
-    width:100%;
-    max-width:1920px;
-    margin:auto;
-    padding:0 0 40px;
-}
-.hero{
-
-width:100%;
-
-display:block;
-
-border-radius:0 0 18px 18px;
-
-box-shadow:
-0 15px 60px rgba(0,0,0,.65);
-
-margin-bottom:55px;
-
-}
-
-footer{
-
-    width:100%;
-    max-width:1180px;
-
-    margin:35px auto 0;
-
-    padding:20px 20px 10px;
-
-    text-align:center;
-
-    border-top:
-    1px solid rgba(216,176,93,.25);
-
-    color:#b8b8b8;
-
-}
-
-
-.footer-brand{
-
-    font-family:
-    'Cormorant Garamond',
-    serif;
-
-    font-size:34px;
-
-    font-weight:600;
-
-    color:#d8b05d;
-
-    letter-spacing:5px;
-
-    margin-bottom:15px;
-
-}
-
-
-.footer-email{
-
-    margin-bottom:22px;
-
-}
-
-
-.footer-email a{
-
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:11px 24px;
-
-    border:
-    1px solid rgba(216,176,93,.60);
-
-    border-radius:999px;
-
-    color:#d8b05d;
-
-    background:
-    rgba(6,24,30,.75);
-
-    text-decoration:none;
-
-    font-family:
-    'Inter',
-    sans-serif;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    letter-spacing:.5px;
-
-    text-transform:none;
-
-    transition:
-    background .3s ease,
-    color .3s ease,
-    transform .3s ease;
-
-}
-    
-
-.footer-email a:hover{
-
-    background:
-    rgba(216,176,93,.10);
-
-    color:#f0d17d;
-
-    transform:translateY(-2px);
-
-}
-
-
-.footer-slogan{
-
-    font-size:15px;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    margin-bottom:12px;
-
-}
-
-
-.footer-services{
-
-    font-size:14px;
-
-    line-height:1.8;
-
-    letter-spacing:1px;
-
-    opacity:.8;
-
-}
-
-
-.footer-copy{
-
-    margin-top:30px;
-
-    font-size:12px;
-
-    letter-spacing:1px;
-
-    opacity:.6;
-
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:900px){
-
-    .main-buttons-wrap{
-        flex-direction:column;
-        gap:16px;
-        margin:30px auto 20px;
-        padding:0 20px;
-    }
-
-    .main-btn{
-        width:100%;
-        min-height:60px;
-        padding:15px 20px;
-        font-size:21px;
-        letter-spacing:1.5px;
-    }
-
-    .container{
-        padding:0;
-    }
-
-    .about-btn{
-        padding:16px 36px;
-        font-size:22px;
-        letter-spacing:2px;
-    }
-
-    .hero{
-        border-radius:10px;
-        margin-bottom:10px;
-    }
-
-    footer{
-        margin-top:35px;
-        padding:20px 10px 10px;
-    }
-
-    .footer-brand{
-        font-size:30px;
-    }
-
-    .footer-email a{
-        font-size:15px;
-        padding:11px 20px;
-    }
-
-    .footer-slogan{
-        font-size:13px;
-        line-height:1.7;
-    }
-
-    .footer-services{
-        font-size:12px;
-        line-height:1.8;
-    }
-
-    .footer-copy{
-        font-size:12px;
-        margin-top:30px;
-    }
-
-}
-
-/* =========================
-   INDEX HEADER
-========================= */
-
-.top-header{
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:90px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding-top:16px;
-
-    background:rgba(4,10,20,.88);
-
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
-
-    border-bottom:
-    1px solid rgba(216,176,93,.18);
-
-    box-shadow:
-    0 8px 30px rgba(0,0,0,.25);
-
-    z-index:9999;
-}
-
-.logo-link{
-    display:inline-block;
-    text-decoration:none;
-}
-
-.logo-link img{
-    width:230px;
-    height:auto;
-    display:block;
-
-    transition:
-    transform .3s ease,
-    filter .3s ease;
-}
-
-.logo-link img:hover{
-    transform:scale(1.04);
-
-    filter:
-    drop-shadow(
-        0 0 18px rgba(216,176,93,.65)
-    );
-}
-
-body{
-    padding-top:90px;
-}
-    
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:900px){
-
-    .top-header{
-        height:90px;
-    }
-
-    body{
-        padding-top:90px;
-    }
-
-    .logo-link img{
-        width:200px;
-    }
-
-}
-
-
-/* =========================
-   LANGUAGE SWITCHER
-========================= */
-
-.language-switcher{
-    position:absolute;
-    top:100px;
-    right:12px;
-    z-index:1000;
-}
-
-
-.lang-btn{
-    width:90px;
-    height:38px;
-
-    padding:0;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:5px;
-
-    background:rgba(6,24,30,.90);
-
-    color:#d8b05d;
-
-    border:
-        1px solid rgba(216,176,93,.45);
-
-    border-radius:999px;
-
-    font-size:13px;
-    font-weight:600;
-
-    cursor:pointer;
-
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
-}
-
-
-.lang-menu{
-    display:none;
-
-    position:absolute;
-
-    top:52px;
-    right:0;
-
-    width:90px;
-
-    background:rgba(6,24,30,.96);
-
-    border:
-        1px solid rgba(216,176,93,.35);
-
-    border-radius:14px;
-
-    overflow:hidden;
-
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.45);
-}
-
-
-.lang-menu a{
-    display:block;
-
-    padding:10px 14px;
-
-    font-size:15px;
-    font-weight:500;
-
-    color:#ffffff;
-
-    text-decoration:none;
-
-    transition:
-        background .25s ease,
-        color .25s ease;
-}
-
-
-.lang-menu a:hover{
-    background:rgba(216,176,93,.15);
-    color:#d8b05d;
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIDDEXA | Connecting Businesses Worldwide</title>
+  <meta name="description" content="FIDDEXA connects businesses, markets and opportunities through international trade, sourcing and strategic partnerships.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body id="top">
-    <header class="top-header">
-
-<a href="index.html" class="logo-link">
-    <img src="images/fiddexa-title.png" alt="FIDDEXA">
-</a>
-        
-    </header>
-    
-    <div class="language-switcher">
-
-<button class="lang-btn">
-🌐 EN
-</button>
-
-<div class="lang-menu">
-
-    <a href="#" id="lang-en">English</a>
-
-    <a href="#" id="lang-zh">中文</a>
-
-    <a href="#" id="lang-fr">Français</a>
-
-    <a href="#" id="lang-es">Español</a>
-
-    <a href="#" id="lang-ru">Русский</a>
-
-    <a href="#" id="lang-hi">हिन्दी</a>
-
-</div>
-
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FIDDEXA home">FIDDEXA</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="about.html">ABOUT</a>
+        <a href="offers.html">BUSINESS AREAS</a>
+        <a href="offers.html">OFFERS</a>
+        <a href="partner.html">PARTNERS</a>
+        <a href="#contact">CONTACT</a>
+        <button class="language" type="button">EN <span>+</span></button>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Open menu">MENU</button>
     </div>
+  </header>
 
-<div class="container">
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">INTERNATIONAL TRADING COMPANY</p>
+          <h1>CONNECTING<br>BUSINESSES<br>WORLDWIDE</h1>
+          <p class="hero-text">FIDDEXA connects businesses, markets and opportunities through international trade, sourcing and strategic partnerships.</p>
+          <div class="hero-line"></div>
+          <div class="keywords">
+            <span>PEOPLE</span>
+            <span>MARKETS</span>
+            <span>OPPORTUNITIES</span>
+          </div>
+        </div>
 
-<img src="images/hero.png" class="hero" alt="FIDDEXA">
+        <div class="hero-visual" aria-label="Global business network">
+          <div class="world-mark">
+            <span class="world-ring ring-one"></span>
+            <span class="world-ring ring-two"></span>
+            <span class="world-line line-one"></span>
+            <span class="world-line line-two"></span>
+            <span class="world-line line-three"></span>
+            <span class="node node-one"></span>
+            <span class="node node-two"></span>
+            <span class="node node-three"></span>
+            <span class="node node-four"></span>
+            <span class="node node-five"></span>
+            <div class="center-label">FIDDEXA</div>
+          </div>
+          <div class="visual-caption">
+            <span>GLOBAL MINDSET</span>
+            <span>REAL RESULTS</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="main-buttons-wrap">
+    <section class="section intro" id="about">
+      <div class="container two-col">
+        <div class="section-label">WHO WE ARE</div>
+        <div>
+          <h2>BRIDGING MARKETS.<br>BUILDING OPPORTUNITIES.</h2>
+          <p>FIDDEXA is an international trading company focused on connecting reliable businesses with practical commercial opportunities across markets.</p>
+          <a class="text-link" href="about.html">MORE ABOUT FIDDEXA <span>→</span></a>
+        </div>
+      </div>
+    </section>
 
-    <a
-    href="about.html"
-    class="main-btn"
-    id="btn-about">
-        WHO WE ARE
-    </a>
+    <section class="section areas">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-label">BUSINESS AREAS</span>
+          <span class="section-index">01 — 06</span>
+        </div>
+        <div class="area-list">
+          <a href="offers.html"><span>01</span><strong>PETROLEUM PRODUCTS</strong><i>→</i></a>
+          <a href="offers.html"><span>02</span><strong>AGRICULTURAL PRODUCTS</strong><i>→</i></a>
+          <a href="offers.html"><span>03</span><strong>METALS</strong><i>→</i></a>
+          <a href="offers.html"><span>04</span><strong>PRECIOUS METALS</strong><i>→</i></a>
+          <a href="offers.html"><span>05</span><strong>MEDICAL PRODUCTS</strong><i>→</i></a>
+          <a href="offers.html"><span>06</span><strong>INTERNATIONAL TRADE & SOURCING</strong><i>→</i></a>
+        </div>
+      </div>
+    </section>
 
-    <a
-    href="offers.html"
-    class="main-btn"
-    id="btn-offers">
-        OUR OFFERS
-    </a>
+    <section class="section approach">
+      <div class="container">
+        <div class="section-label">OUR APPROACH</div>
+        <div class="approach-grid">
+          <article><span>01</span><h3>PEOPLE</h3><p>Trusted relationships built on communication, reliability and respect.</p></article>
+          <article><span>02</span><h3>MARKETS</h3><p>Understanding different markets and connecting relevant opportunities.</p></article>
+          <article><span>03</span><h3>PARTNERSHIP</h3><p>Long-term cooperation focused on mutual commercial value.</p></article>
+          <article><span>04</span><h3>GROWTH</h3><p>Practical solutions designed to create sustainable opportunities.</p></article>
+        </div>
+      </div>
+    </section>
 
-    <a
-    href="partner.html"
-    class="main-btn"
-    id="btn-partner">
-        BECOME A PARTNER
-    </a>
+    <section class="section reach">
+      <div class="container reach-inner">
+        <div>
+          <span class="section-label">GLOBAL REACH</span>
+          <h2>DIFFERENT MARKETS.<br>ONE VISION.<br>A BETTER TOMORROW.</h2>
+        </div>
+        <div class="reach-map" aria-hidden="true">
+          <span class="map-line m1"></span><span class="map-line m2"></span><span class="map-line m3"></span>
+          <span class="map-node n1"></span><span class="map-node n2"></span><span class="map-node n3"></span><span class="map-node n4"></span>
+        </div>
+      </div>
+    </section>
 
+    <section class="section partner-cta">
+      <div class="container cta-inner">
+        <div>
+          <span class="section-label">PARTNERSHIP</span>
+          <h2>LET'S BUILD<br>A STRONGER TOMORROW.</h2>
+        </div>
+        <a class="outline-link" href="partner.html">BECOME A PARTNER <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <div>
+          <span class="section-label">CONTACT</span>
+          <h2>GLOBAL BUSINESS.<br>REAL OPPORTUNITIES.</h2>
+        </div>
+        <a class="contact-email" href="mailto:contact@fiddexa.com">contact@fiddexa.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>FIDDEXA</span>
+      <span>CONNECTING BUSINESSES WORLDWIDE</span>
+      <span>© 2026 FIDDEXA</span>
     </div>
-
-</div>
-
-<footer>
-
-    <div class="footer-brand">
-        FIDDEXA
-    </div>
-
-    <div class="footer-email">
-        <a href="mailto:contact@fiddexa.com">
-            contact@fiddexa.com
-        </a>
-    </div>
-
-    <div
-    class="footer-slogan"
-    id="footer-slogan">
-        CONNECTING BUSINESSES WORLDWIDE
-    </div>
-
-    <div
-    class="footer-services"
-    id="footer-services">
-        Global Trade • International Sourcing • Strategic Partnerships
-    </div>
-
-    <div
-    class="footer-copy"
-    id="footer-copy">
-        © 2026 FIDDEXA. All Rights Reserved.
-    </div>
-
-</footer>
-
-</div>
-
-<script>
-
-const btn =
-document.querySelector(".lang-btn");
-
-const menu =
-document.querySelector(".lang-menu");
-
-
-/* =========================
-   TRANSLATIONS
-========================= */
-
-const translations = {
-
-
-/* ENGLISH */
-
-en: {
-
-    langButton:"🌐 EN",
-
-    aboutButton:"WHO WE ARE",
-
-    offersButton:"OUR OFFERS",
-
-    partnerButton:"BECOME A PARTNER",
-
-    footerSlogan:
-    "CONNECTING BUSINESSES WORLDWIDE",
-
-    footerServices:
-    "Global Trade • International Sourcing • Strategic Partnerships",
-
-    footerCopy:
-    "© 2026 FIDDEXA. All Rights Reserved."
-
-},
-
-
-/* CHINESE */
-
-zh: {
-
-    langButton:"🌐 中文",
-
-    aboutButton:"关于我们",
-
-    offersButton:"我们的业务机会",
-
-    partnerButton:"成为合作伙伴",
-
-    footerSlogan:
-    "连接全球企业",
-
-    footerServices:
-    "国际贸易 • 全球采购 • 战略合作伙伴关系",
-
-    footerCopy:
-    "© 2026 FIDDEXA。版权所有。"
-
-},
-
-
-/* FRENCH */
-
-fr: {
-
-    langButton:"🌐 FR",
-
-    aboutButton:"QUI SOMMES-NOUS",
-
-    offersButton:"NOS OFFRES",
-
-    partnerButton:"DEVENIR PARTENAIRE",
-
-    footerSlogan:
-    "CONNECTER LES ENTREPRISES DANS LE MONDE ENTIER",
-
-    footerServices:
-    "Commerce international • Sourcing international • Partenariats stratégiques",
-
-    footerCopy:
-    "© 2026 FIDDEXA. Tous droits réservés."
-
-},
-
-
-/* SPANISH */
-
-es: {
-
-    langButton:"🌐 ES",
-
-    aboutButton:"QUIÉNES SOMOS",
-
-    offersButton:"NUESTRAS OFERTAS",
-
-    partnerButton:"CONVIÉRTETE EN SOCIO",
-
-    footerSlogan:
-    "CONECTANDO EMPRESAS EN TODO EL MUNDO",
-
-    footerServices:
-    "Comercio internacional • Abastecimiento global • Asociaciones estratégicas",
-
-    footerCopy:
-    "© 2026 FIDDEXA. Todos los derechos reservados."
-
-},
-
-
-/* RUSSIAN */
-
-ru: {
-
-    langButton:"🌐 RU",
-
-    aboutButton:"О КОМПАНИИ",
-
-    offersButton:"НАШИ ПРЕДЛОЖЕНИЯ",
-
-    partnerButton:"СТАТЬ ПАРТНЁРОМ",
-
-    footerSlogan:
-    "СОЕДИНЯЕМ БИЗНЕС ПО ВСЕМУ МИРУ",
-
-    footerServices:
-    "Международная торговля • Глобальный поиск поставщиков • Стратегические партнёрства",
-
-    footerCopy:
-    "© 2026 FIDDEXA. Все права защищены."
-
-},
-
-
-/* HINDI */
-
-hi: {
-
-    langButton:"🌐 HI",
-
-    aboutButton:"हम कौन हैं",
-
-    offersButton:"हमारे प्रस्ताव",
-
-    partnerButton:"भागीदार बनें",
-
-    footerSlogan:
-    "दुनिया भर के व्यवसायों को जोड़ना",
-
-    footerServices:
-    "अंतरराष्ट्रीय व्यापार • वैश्विक सोर्सिंग • रणनीतिक साझेदारी",
-
-    footerCopy:
-    "© 2026 FIDDEXA. सर्वाधिकार सुरक्षित।"
-
-}
-
-};
-
-
-/* =========================
-   APPLY LANGUAGE
-========================= */
-
-function applyLanguage(lang){
-
-    if(!translations[lang]){
-        lang = "en";
-    }
-
-    const t =
-    translations[lang];
-
-
-    btn.textContent =
-    t.langButton;
-
-
-    document
-    .getElementById("btn-about")
-    .textContent =
-    t.aboutButton;
-
-
-    document
-    .getElementById("btn-offers")
-    .textContent =
-    t.offersButton;
-
-
-    document
-    .getElementById("btn-partner")
-    .textContent =
-    t.partnerButton;
-
-
-    document
-    .getElementById("footer-slogan")
-    .textContent =
-    t.footerSlogan;
-
-
-    document
-    .getElementById("footer-services")
-    .textContent =
-    t.footerServices;
-
-
-    document
-    .getElementById("footer-copy")
-    .textContent =
-    t.footerCopy;
-
-
-    document.documentElement.lang =
-    lang;
-
-
-    localStorage.setItem(
-        "language",
-        lang
-    );
-
-
-    menu.style.display =
-    "none";
-
-}
-
-
-/* =========================
-   LANGUAGE MENU
-========================= */
-
-btn.addEventListener(
-    "click",
-    function(e){
-
-        e.stopPropagation();
-
-        menu.style.display =
-        menu.style.display === "block"
-        ? "none"
-        : "block";
-
-    }
-);
-
-
-/* =========================
-   LANGUAGE LINKS
-========================= */
-
-document
-.getElementById("lang-en")
-.addEventListener(
-    "click",
-    function(e){
-
-        e.preventDefault();
-
-        applyLanguage("en");
-
-    }
-);
-
-
-document
-.getElementById("lang-zh")
-.addEventListener(
-    "click",
-    function(e){
-
-        e.preventDefault();
-
-        applyLanguage("zh");
-
-    }
-);
-
-
-document
-.getElementById("lang-fr")
-.addEventListener(
-    "click",
-    function(e){
-
-        e.preventDefault();
-
-        applyLanguage("fr");
-
-    }
-);
-
-
-document
-.getElementById("lang-es")
-.addEventListener(
-    "click",
-    function(e){
-
-        e.preventDefault();
-
-        applyLanguage("es");
-
-    }
-);
-
-
-document
-.getElementById("lang-ru")
-.addEventListener(
-    "click",
-    function(e){
-
-        e.preventDefault();
-
-        applyLanguage("ru");
-
-    }
-);
-
-
-document
-.getElementById("lang-hi")
-.addEventListener(
-    "click",
-    function(e){
-
-        e.preventDefault();
-
-        applyLanguage("hi");
-
-    }
-);
-
-
-/* =========================
-   CLOSE MENU OUTSIDE
-========================= */
-
-document.addEventListener(
-    "click",
-    function(){
-
-        menu.style.display =
-        "none";
-
-    }
-);
-
-
-menu.addEventListener(
-    "click",
-    function(e){
-
-        e.stopPropagation();
-
-    }
-);
-
-
-/* =========================
-   LOAD SAVED LANGUAGE
-========================= */
-
-const savedLanguage =
-localStorage.getItem(
-    "language"
-);
-
-
-if(
-    savedLanguage &&
-    translations[savedLanguage]
-){
-
-    applyLanguage(
-        savedLanguage
-    );
-
-}else{
-
-    applyLanguage(
-        "en"
-    );
-
-}
-
-        </script>
-
+  </footer>
 </body>
-
 </html>
