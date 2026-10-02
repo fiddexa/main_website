@@ -363,3 +363,138 @@ a{color:inherit;text-decoration:none}
     margin-top:12px;
   }
 }
+
+/* INNER PAGES */
+.page-hero{
+  border-bottom:1px solid var(--line);
+  padding:72px 0 76px;
+}
+
+.page-hero-label{
+  font-size:10px;
+  line-height:1.2;
+  font-weight:600;
+  letter-spacing:.32em;
+  color:var(--navy);
+  margin-bottom:28px;
+}
+
+.page-hero h1{
+  margin:0 0 26px;
+  font:600 52px/1.05 Manrope,Arial,sans-serif;
+  letter-spacing:.03em;
+  color:var(--navy);
+}
+
+.page-hero p{
+  max-width:700px;
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
+}
+
+.content-section{
+  padding:82px 0 100px;
+  border-bottom:1px solid var(--line);
+}
+
+.section-heading-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.section-counter{
+  font-size:10px;
+  letter-spacing:.2em;
+  color:var(--muted);
+}
+
+.simple-list{
+  border-top:1px solid var(--line);
+}
+
+.simple-list-item{
+  display:grid;
+  grid-template-columns:70px 1fr 30px;
+  align-items:center;
+  min-height:82px;
+  border-bottom:1px solid var(--line);
+  transition:padding .2s ease;
+}
+
+.simple-list-item:hover{
+  padding-left:10px;
+}
+
+.simple-list-number{
+  font-size:10px;
+  color:var(--muted);
+  letter-spacing:.12em;
+}
+
+.simple-list-title{
+  font:600 14px Manrope,Arial,sans-serif;
+  letter-spacing:.14em;
+  color:var(--navy);
+}
+
+.simple-list-arrow{
+  text-align:right;
+  color:var(--navy);
+}
+
+.cta-section{
+  padding:90px 0;
+  border-bottom:1px solid var(--line);
+  background:var(--soft);
+}
+
+.cta-label{
+  font-size:10px;
+  line-height:1.2;
+  font-weight:600;
+  letter-spacing:.32em;
+  color:var(--navy);
+  margin-bottom:28px;
+}
+
+.cta-section h2{
+  margin:0 0 34px;
+  font:600 42px/1.08 Manrope,Arial,sans-serif;
+  letter-spacing:.03em;
+  color:var(--navy);
+}
+
+@media(max-width:800px){
+  .page-hero{
+    padding:60px 0 62px;
+  }
+
+  .page-hero h1{
+    font-size:42px;
+  }
+
+  .content-section{
+    padding:65px 0 75px;
+  }
+
+  .simple-list-item{
+    grid-template-columns:45px 1fr 20px;
+    min-height:72px;
+  }
+
+  .simple-list-title{
+    font-size:11px;
+    letter-spacing:.1em;
+  }
+
+  .cta-section{
+    padding:70px 0;
+  }
+
+  .cta-section h2{
+    font-size:32px;
+  }
+}
