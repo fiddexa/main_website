@@ -74,14 +74,6 @@ a{color:inherit;text-decoration:none}
 .approach p{font-size:13px;color:var(--muted);margin:0;max-width:220px}
 .reach-inner{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
 .reach h2{margin-top:28px}
-.reach-map{height:300px;position:relative;border:1px solid var(--line);overflow:hidden}
-.reach-map:before{content:"";position:absolute;width:360px;height:180px;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid #cbd5df;border-radius:50%}
-.map-line{position:absolute;height:1px;background:#a5b5c3;transform-origin:left}
-.m1{width:250px;left:55px;top:90px;transform:rotate(20deg)}
-.m2{width:220px;left:110px;top:175px;transform:rotate(-20deg)}
-.m3{width:190px;left:150px;top:150px}
-.map-node{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--navy)}
-.n1{left:51px;top:87px}.n2{right:63px;top:168px}.n3{left:105px;bottom:78px}.n4{right:108px;top:145px}
 .partner-cta{background:var(--navy);color:#fff}
 .partner-cta .section-label,.partner-cta h2{color:#fff}
 .cta-inner{display:flex;align-items:end;justify-content:space-between;gap:50px}
@@ -660,20 +652,36 @@ body{
   object-fit:contain;
 }
 
-@media(max-width:800px){
-  .hero-logo-image{
-    width:auto;
-    height:100%;
-    max-width:100%;
-    max-height:none;
-  }
+/* GLOBAL REACH — NEW VISUAL */
+
+.reach-map{
+  height:360px;
+  position:relative;
+  border:1px solid var(--line);
+  overflow:hidden;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-@media(max-width:520px){
-  .hero-logo-image{
-    width:auto;
-    height:90%;
-    max-width:100%;
-    max-height:none;
+.reach-map img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+
+@media(max-width:800px){
+  .reach-map{
+    height:300px;
+  }
+
+  .reach-map img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
   }
 }
