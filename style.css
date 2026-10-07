@@ -655,7 +655,9 @@ body{
 /* GLOBAL REACH — NEW VISUAL */
 
 .reach-map{
-  height:360px;
+  width:100%;
+  aspect-ratio:16 / 9;
+  height:auto;
   position:relative;
   border:1px solid var(--line);
   overflow:hidden;
@@ -675,13 +677,25 @@ body{
 
 @media(max-width:800px){
   .reach-map{
-    height:240px;
+    width:100%;
+    aspect-ratio:16 / 9;
+    height:auto;
   }
 
   .reach-map img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
 }
+
+/* GLOBAL REACH — MOBILE TYPOGRAPHY */
+
+@media(max-width:520px){
+  .reach h2{
+    font-size:29px;
+    line-height:1.08;
+    margin-top:24px;
+  }
 }
