@@ -16,19 +16,18 @@
 <header class="site-header">
   <div class="container header-inner">
 
-    <a href="index.html" class="brand">FIDDEXA</a>
+    <a href="index.html" class="brand" aria-label="FIDDEXA home">FIDDEXA</a>
 
-    <nav class="main-nav nav">
+    <nav class="main-nav nav" aria-label="Main navigation">
 
-      <a href="index.html">HOME</a>
-      <a href="about.html" data-i18n="navAbout">ABOUT</a>
-      <a href="offers.html" data-i18n="navAreas">BUSINESS AREAS</a>
-      <a href="offers.html" data-i18n="navOffers">OFFERS</a>
-      <a href="partner.html" class="active" data-i18n="navPartner">PARTNERS</a>
+      <a href="index.html" data-page="home" data-i18n="navHome">HOME</a>
+      <a href="about.html" data-page="about" data-i18n="navAbout">ABOUT</a>
+      <a href="offers.html" data-page="areas" data-i18n="navAreas">BUSINESS AREAS</a>
+      <a href="partner.html" data-page="partner" data-i18n="navPartner">PARTNERS</a>
+      <a href="index.html#contact" data-i18n="navContact">CONTACT</a>
 
       <div class="language lang">
-
-        <button class="lang-btn" type="button">
+        <button class="lang-btn" type="button" aria-label="Select language">
           <span data-lang-label>EN</span> +
         </button>
 
@@ -37,7 +36,6 @@
           <button type="button" data-lang="ru">РУССКИЙ</button>
           <button type="button" data-lang="zh">中文</button>
         </div>
-
       </div>
 
     </nav>
@@ -110,6 +108,7 @@
       <input type="hidden" name="access_key" value="a15d278f-cff2-4149-932f-d1d1a3f38111">
       <input type="hidden" name="subject" value="FIDDEXA — New Business Inquiry">
       <input type="hidden" name="from_name" value="FIDDEXA Website">
+      <input type="checkbox" name="botcheck" style="display:none;">
 
 
       <div class="form-grid">
@@ -262,66 +261,7 @@
   </div>
 
 </footer>
-
-
 <script src="script.js"></script>
-
-<script>
-document.getElementById("partner-form")?.addEventListener("submit", async function(e) {
-
-  e.preventDefault();
-
-  const form = e.currentTarget;
-  const status = document.getElementById("form-status");
-  const button = form.querySelector(".form-submit");
-
-  button.disabled = true;
-  button.textContent = "SENDING...";
-
-  try {
-
-    const response = await fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-      headers: {
-        Accept: "application/json"
-      }
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-
-      status.textContent = "Thank you. Your request has been sent.";
-      status.className = "form-status success";
-
-      form.reset();
-
-    } else {
-
-      status.textContent =
-        "Unable to send the request. Please try again or email contact@fiddexa.com.";
-
-      status.className = "form-status error";
-
-    }
-
-  } catch (error) {
-
-    status.textContent =
-      "Unable to send the request. Please email contact@fiddexa.com.";
-
-    status.className = "form-status error";
-
-  } finally {
-
-    button.disabled = false;
-    button.textContent = "SEND REQUEST";
-
-  }
-
-});
-</script>
 
 </body>
 </html>

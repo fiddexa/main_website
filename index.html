@@ -10,19 +10,38 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="FIDDEXA home">FIDDEXA</a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="about.html">ABOUT</a>
-        <a href="offers.html">BUSINESS AREAS</a>
-        <a href="offers.html">OFFERS</a>
-        <a href="partner.html">PARTNERS</a>
-        <a href="#contact">CONTACT</a>
-        <button class="language" type="button">EN <span>+</span></button>
-      </nav>
-      <button class="menu-toggle" type="button" aria-label="Open menu">MENU</button>
-    </div>
-  </header>
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand" aria-label="FIDDEXA home">FIDDEXA</a>
+
+    <nav class="main-nav nav" aria-label="Main navigation">
+
+      <a href="index.html" data-page="home" data-i18n="navHome">HOME</a>
+      <a href="about.html" data-page="about" data-i18n="navAbout">ABOUT</a>
+      <a href="offers.html" data-page="areas" data-i18n="navAreas">BUSINESS AREAS</a>
+      <a href="partner.html" data-page="partner" data-i18n="navPartner">PARTNERS</a>
+      <a href="index.html#contact" data-i18n="navContact">CONTACT</a>
+
+      <div class="language lang">
+        <button class="lang-btn" type="button" aria-label="Select language">
+          <span data-lang-label>EN</span> +
+        </button>
+
+        <div class="lang-menu">
+          <button type="button" data-lang="en">ENGLISH</button>
+          <button type="button" data-lang="ru">РУССКИЙ</button>
+          <button type="button" data-lang="zh">中文</button>
+        </div>
+      </div>
+
+    </nav>
+
+    <button class="menu-toggle menu-btn" type="button" aria-label="Open menu">
+      MENU
+    </button>
+
+  </div>
+</header>
 
   <main>
     <section class="hero">
@@ -39,25 +58,13 @@
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Global business network">
-          <div class="world-mark">
-            <span class="world-ring ring-one"></span>
-            <span class="world-ring ring-two"></span>
-            <span class="world-line line-one"></span>
-            <span class="world-line line-two"></span>
-            <span class="world-line line-three"></span>
-            <span class="node node-one"></span>
-            <span class="node node-two"></span>
-            <span class="node node-three"></span>
-            <span class="node node-four"></span>
-            <span class="node node-five"></span>
-            <div class="center-label">FIDDEXA</div>
-          </div>
-          <div class="visual-caption">
-            <span>GLOBAL MINDSET</span>
-            <span>REAL RESULTS</span>
-          </div>
-        </div>
+        <div class="hero-visual" aria-label="FIDDEXA global business network">
+  <img
+    class="hero-logo-image"
+    src="images/fiddexa-globe-logo.png"
+    alt="FIDDEXA global business network"
+  >
+</div>
       </div>
     </section>
 
@@ -141,5 +148,6 @@
       <span>© 2026 FIDDEXA</span>
     </div>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>

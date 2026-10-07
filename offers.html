@@ -15,25 +15,38 @@
 
   <!-- HEADER -->
   <header class="site-header">
-    <div class="container header-inner">
+  <div class="container header-inner">
 
-      <a href="index.html" class="brand">FIDDEXA</a>
+    <a href="index.html" class="brand" aria-label="FIDDEXA home">FIDDEXA</a>
 
-      <nav class="main-nav">
-        <a href="about.html">ABOUT</a>
-        <a href="offers.html" class="active">BUSINESS AREAS</a>
-        <a href="offers.html">OFFERS</a>
-        <a href="partner.html">PARTNERS</a>
-        <a href="partner.html#contact">CONTACT</a>
-        <span class="language">EN <span class="language-plus">+</span></span>
-      </nav>
+    <nav class="main-nav nav" aria-label="Main navigation">
 
-      <button class="menu-toggle" type="button" aria-label="Open menu">
-        MENU
-      </button>
+      <a href="index.html" data-page="home" data-i18n="navHome">HOME</a>
+      <a href="about.html" data-page="about" data-i18n="navAbout">ABOUT</a>
+      <a href="offers.html" data-page="areas" data-i18n="navAreas">BUSINESS AREAS</a>
+      <a href="partner.html" data-page="partner" data-i18n="navPartner">PARTNERS</a>
+      <a href="index.html#contact" data-i18n="navContact">CONTACT</a>
 
-    </div>
-  </header>
+      <div class="language lang">
+        <button class="lang-btn" type="button" aria-label="Select language">
+          <span data-lang-label>EN</span> +
+        </button>
+
+        <div class="lang-menu">
+          <button type="button" data-lang="en">ENGLISH</button>
+          <button type="button" data-lang="ru">РУССКИЙ</button>
+          <button type="button" data-lang="zh">中文</button>
+        </div>
+      </div>
+
+    </nav>
+
+    <button class="menu-toggle menu-btn" type="button" aria-label="Open menu">
+      MENU
+    </button>
+
+  </div>
+</header>
 
 <main>
 
