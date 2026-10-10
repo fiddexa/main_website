@@ -708,6 +708,7 @@ function applyLanguage(lang){
   setActivePage();
 
   document.querySelector(".lang-menu")?.classList.remove("show");
+  document.querySelector(".nav")?.classList.remove("open");
 }
 
 function setupNavigation(){
